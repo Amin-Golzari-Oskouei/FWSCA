@@ -31,9 +31,9 @@ def calculateMetrics(lable_pre, lable_true, row, data):
 
         testAcc = accuracy_score(lable_true, flipped_labels)
         testNMI = v_measure_score(lable_true, flipped_labels)
-        testpre = precision_score(lable_true, flipped_labels, average='micro')
-        testrec = recall_score(lable_true, flipped_labels, average='micro')
-        testf1s = f1_score(lable_true, flipped_labels, average='micro')
+        testpre = precision_score(lable_true, flipped_labels, average='macro')
+        testrec = recall_score(lable_true, flipped_labels, average='macro')
+        testf1s = f1_score(lable_true, flipped_labels, average='macro')
         testdbs = davies_bouldin_score(data, flipped_labels)
         testsis = silhouette_score(data, flipped_labels)
 
