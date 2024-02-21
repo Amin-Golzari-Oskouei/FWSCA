@@ -98,14 +98,7 @@ def main(data, center_points, k, t_max, row, fuzzy_degree, col):
 
         # check threshold
         threshold = 1 / (np.sqrt(row * col))     
-        data = data[:, np.squeeze(z > threshold)]
-        center_points = center_points[:, np.squeeze(z > threshold)]
-        col = np.sum(z > threshold)
-        delta = delta[np.squeeze(z > threshold)]
-        z = z[z > threshold]
-        
-        dwkm= np.zeros([k, col])
-        dwm = np.zeros([col])
+        z[z <= threshold] = 0
         
         # normalize 
         z = z / np.sum(z)
