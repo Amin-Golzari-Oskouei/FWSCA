@@ -9,9 +9,6 @@ from calculateMetrics import calculateMetrics
 import scipy.io
 from parameters import parameters
 import time
-from runScript import runScript
-
-
 
 # Load the dataset.
 datasets = ['iris']
