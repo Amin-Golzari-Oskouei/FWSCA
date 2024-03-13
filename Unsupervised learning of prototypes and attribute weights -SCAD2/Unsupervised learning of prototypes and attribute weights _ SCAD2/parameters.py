@@ -7,38 +7,46 @@ def parameters(dataset, lable_true):
     fuzzy_degree = 2             # fuzzy membership degree
 
     # specific parameters
-    if dataset=='iris':
-        q = 2                     # the exponent value for the feature weight updates (β parameter in the original Paper).
-    elif dataset=='balance':
-        pass
+    if dataset=='balance':
+        q = 3.9                     # the exponent value for the feature weight updates (β parameter in the original Paper).
     elif dataset=='breast':
-        pass
+        q = 9.5 
     elif dataset=='bupa':
-        pass
-    elif dataset=='cmc':
-        pass
-    elif dataset=='coil2':
-        pass
+        q = 1.3 
+    elif dataset=='cancer':
+        q = 10
+    elif dataset=='Car_evaluation':
+        q = 1 
     elif dataset=='dermatology':
-        pass
+        q = 1 
+    elif dataset=='diabet':
+        q = 10 
     elif dataset=='ecoli':
-        pass
-    elif dataset=='fertility':
-        pass
+        q = 1 
     elif dataset=='glass':
-        pass
+        q = 5.4 
+    elif dataset=='heart':
+        q = 9.7 
+    elif dataset=='heberman':
+        q = 9.6 
+    elif dataset=='ionosphere':
+        q = 1 
+    elif dataset=='iris':
+        q = 2 
+    elif dataset=='letters':
+        q = 10 
     elif dataset=='seed':
-        pass
-    elif dataset=='seismic':
-        pass
-    elif dataset=='zoo':
-        pass
-    elif dataset=='wine':
-        pass
-    elif dataset=='vowel':
-        pass
-    elif dataset=='thyroid':
-        pass
+        q = 6.6 
     elif dataset=='soybean':
-        pass
+        q = 1 
+    elif dataset=='spectfheart':
+        q = 1.3 
+    elif dataset=='synthetic':
+        q = 8.7 
+    elif dataset=='thyroid':
+        q = 8.6 
+    elif dataset=='wine':
+        q = 9.7 
+    elif dataset=='zoo':
+        q = 1 
     return k, t_max, Restarts, fuzzy_degree, q
