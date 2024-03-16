@@ -11,7 +11,7 @@ import time
 import os
 
 # Load the dataset.
-dataset='bupa'
+dataset='iris'
 mat = scipy.io.loadmat(f'{dataset}'+'.mat')
 data = mat[f'{dataset}']
 
