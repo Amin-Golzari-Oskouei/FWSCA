@@ -8,26 +8,26 @@ def parameters(dataset, lable_true):
 
     # specific parameters
     if dataset=='balance':
-        q = 3.9                     # the exponent value for the feature weight updates (β parameter in the original Paper).
-        sigma = 1000000
-    elif dataset=='breast':
-        q = 9.5 
+        q = 1.2                     # the exponent value for the feature weight updates (β parameter in the original Paper).
         sigma = 10
+    elif dataset=='breast':
+        q = 2.1 
+        sigma = 0.000001
     elif dataset=='bupa':
-        q = 1.3 
-        sigma = 0.01
+        q = 1.1 
+        sigma = 100
     elif dataset=='cancer':
-        q = 10
+        q = 1.1
         sigma = 100
     elif dataset=='Car_evaluation':
         q = 1 
-        sigma = 0.0000001
+        sigma = 0.000001
     elif dataset=='dermatology':
         q = 1 
         sigma = 10
     elif dataset=='diabet':
-        q = 10 
-        sigma = 100000
+        q = 6.7 
+        sigma = 100
     elif dataset=='ecoli':
         q = 1 
         sigma = 10
@@ -35,36 +35,37 @@ def parameters(dataset, lable_true):
         q = 5.4 
         sigma = 0.0001
     elif dataset=='heart':
-        q = 9.7 
+        q = 1.1 
         sigma = 10
     elif dataset=='heberman':
-        q = 9.6 
-        sigma = 0.01 
+        q = 1.1
+        sigma = 100 
     elif dataset=='ionosphere':
         sigma = 10 
     elif dataset=='iris':
-        q = 2 
-        sigma = 1
+        q = 1.1 
+        sigma = 10
     elif dataset=='letters':
-        sigma = 1 
+	q = 7.5 
+        sigma = 10
     elif dataset=='seed':
-        q = 6.6 
-        sigma = 100000
+        q = 1.1 
+        sigma = 0.000001
     elif dataset=='soybean':
         q = 1 
         sigma = 10
     elif dataset=='spectfheart':
-        q = 1.3 
-        sigma = 0.1
+        q = 1.1
+        sigma = 10
     elif dataset=='synthetic':
-        q = 8.7 
-        sigma = 0.1
+        q = 1.1 
+        sigma = 100
     elif dataset=='thyroid':
-        q = 8.6 
-        sigma = 1000000
+        q = 6.7 
+        sigma = 100
     elif dataset=='wine':
-        q = 9.7 
-        sigma = 0.0001
+        q = 1.6 
+        sigma = 100
     elif dataset=='zoo':
         q = 1 
         sigma = 10
