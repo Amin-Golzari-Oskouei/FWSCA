@@ -27,7 +27,7 @@ def main(data, center_points, k, t_max, row, fuzzy_degree, col):
 
         tmp1 = np.zeros([row, k])
         for j in range(k):
-            tmp2 = (dNK / np.transpose(np.tile(dNK[:, j], (k, 1)))) ** (1 / (fuzzy_degree - 1))
+            tmp2 = (dNK / np.transpose(np.tile(dNK[:, j], (k, 1)))) ** (2 / (fuzzy_degree - 1))
             tmp2[np.where(np.isnan(tmp2))] = 0
             tmp2[np.where(np.isinf(tmp2))] = 0
             tmp1 = tmp1 + tmp2
