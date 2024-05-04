@@ -13,47 +13,69 @@ def parameters(dataset, lable_true):
             a_coefficient = 1;           # coefficient of u
             b_coefficient = 1;           # coefficient of t
             balance_tarm = 1;            # balance parameter among to terms of loss function
-    elif dataset=='balance':
-        pass
+
     elif dataset=='breast':
-        pass
+            a_coefficient = 1;           # coefficient of u
+            b_coefficient = 1;           # coefficient of t
+            balance_tarm = 1;            # balance parameter among to terms of loss function
     elif dataset=='bupa':
-        pass
+            a_coefficient = 1;           # coefficient of u
+            b_coefficient = 1;           # coefficient of t
+            balance_tarm = 1;            # balance parameter among to terms of loss function
     elif dataset=='cancer':
-        pass
-    elif dataset=='Car_evaluation':
-        pass
+            a_coefficient = 1;           # coefficient of u
+            b_coefficient = 1;           # coefficient of t
+            balance_tarm = 1;            # balance parameter among to terms of loss function
+
     elif dataset=='dermatology':
-        pass
+            a_coefficient = 1;           # coefficient of u
+            b_coefficient = 1;           # coefficient of t
+            balance_tarm = 1;            # balance parameter among to terms of loss function
     elif dataset=='diabet':
-        pass
+            a_coefficient = 1;           # coefficient of u
+            b_coefficient = 1;           # coefficient of t
+            balance_tarm = 1;            # balance parameter among to terms of loss function
     elif dataset=='ecoli':
-        pass
+            a_coefficient = 1;           # coefficient of u
+            b_coefficient = 1;           # coefficient of t
+            balance_tarm = 1;            # balance parameter among to terms of loss function
     elif dataset=='glass':
-        pass
+            a_coefficient = 1;           # coefficient of u
+            b_coefficient = 1;           # coefficient of t
+            balance_tarm = 1;            # balance parameter among to terms of loss function
     elif dataset=='heberman':
-        pass
+            a_coefficient = 1;           # coefficient of u
+            b_coefficient = 1;           # coefficient of t
+            balance_tarm = 1;            # balance parameter among to terms of loss function
     elif dataset=='ionosphere':
-        pass
-    elif dataset=='heart':
-        pass
+            a_coefficient = 1;           # coefficient of u
+            b_coefficient = 1;           # coefficient of t
+            balance_tarm = 1;            # balance parameter among to terms of loss function
+
     elif dataset=='letters':
-        pass
+            a_coefficient = 1;           # coefficient of u
+            b_coefficient = 1;           # coefficient of t
+            balance_tarm = 1;            # balance parameter among to terms of loss function
     elif dataset=='seed':
-        pass
-    elif dataset=='seismic':
-        pass
+            a_coefficient = 1;           # coefficient of u
+            b_coefficient = 1;           # coefficient of t
+            balance_tarm = 1;            # balance parameter among to terms of loss function
     elif dataset=='synthetic':
-        pass
+            a_coefficient = 1;           # coefficient of u
+            b_coefficient = 1;           # coefficient of t
+            balance_tarm = 1;            # balance parameter among to terms of loss function
     elif dataset=='spectfheart':
-        pass
-    elif dataset=='zoo':
-        pass
+            a_coefficient = 1;           # coefficient of u
+            b_coefficient = 1;           # coefficient of t
+            balance_tarm = 1;            # balance parameter among to terms of loss function
+
     elif dataset=='wine':
-        pass
+            a_coefficient = 1;           # coefficient of u
+            b_coefficient = 1;           # coefficient of t
+            balance_tarm = 1;            # balance parameter among to terms of loss function
     elif dataset=='thyroid':
-        pass
-    elif dataset=='soybean':
-        pass
+            a_coefficient = 1;           # coefficient of u
+            b_coefficient = 1;           # coefficient of t
+            balance_tarm = 1;            # balance parameter among to terms of loss function
         
     return k, t_max, Restarts, fuzzy_degree, T_pow, a_coefficient, b_coefficient, balance_tarm
