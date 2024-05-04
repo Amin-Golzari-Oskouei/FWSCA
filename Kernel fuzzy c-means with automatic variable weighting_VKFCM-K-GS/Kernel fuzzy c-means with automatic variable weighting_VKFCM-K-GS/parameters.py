@@ -8,65 +8,64 @@ def parameters(dataset, lable_true):
 
     # specific parameters
     if dataset=='balance':
-        q = 1.2                     # the exponent value for the feature weight updates (β parameter in the original Paper).
-        sigma = 10
+        q = 5.4                     # the exponent value for the feature weight updates (β parameter in the original Paper).
+        sigma = 10000
     elif dataset=='breast':
-        q = 2.1 
-        sigma = 0.000001
+        q = 2.6 
+        sigma = 10
     elif dataset=='bupa':
-        q = 1.1 
-        sigma = 100
+        q = 2.5 
+        sigma = 0.01
     elif dataset=='cancer':
-        q = 1.1
-        sigma = 100
+        q = 1
+        sigma = 1
     elif dataset=='Car_evaluation':
         q = 1 
-        sigma = 0.000001
+        sigma = 1
     elif dataset=='dermatology':
         q = 1 
-        sigma = 10
+        sigma = 1
     elif dataset=='diabet':
-        q = 6.7 
-        sigma = 100
+        q = 1 
+        sigma = 1
     elif dataset=='ecoli':
         q = 1 
-        sigma = 10
+        sigma = 1
     elif dataset=='glass':
-        q = 5.4 
-        sigma = 0.0001
-    elif dataset=='heart':
-        q = 1.1 
-        sigma = 10
-    elif dataset=='heberman':
-        q = 1.1
-        sigma = 100 
-    elif dataset=='ionosphere':
-        sigma = 10 
-    elif dataset=='iris':
-        q = 1.1 
-        sigma = 10
-    elif dataset=='letters':
-	q = 7.5 
-        sigma = 10
-    elif dataset=='seed':
-        q = 1.1 
-        sigma = 0.000001
-    elif dataset=='soybean':
         q = 1 
-        sigma = 10
-    elif dataset=='spectfheart':
-        q = 1.1
-        sigma = 10
-    elif dataset=='synthetic':
+        sigma = 1
+    elif dataset=='heart':
+        q = 1 
+        sigma = 1
+    elif dataset=='heberman':
+        q = 1.3
+        sigma = 0.01 
+    elif dataset=='ionosphere':
+        q=1
+        sigma = 1 
+    elif dataset=='iris':
+        q = 2.5 
+        sigma = 1000000
+    elif dataset=='letters':
+        sigma = 1.6
+        q = 100
+    elif dataset=='seed':
+        q = 8.5 
+        sigma = 1
+    elif dataset=='soybean':
         q = 1.1 
-        sigma = 100
+        sigma = 0.001
+    elif dataset=='spectfheart':
+        q = 5.5
+        sigma = 0.1
+    elif dataset=='synthetic':
+        q = 9.7
+        sigma = 1
     elif dataset=='thyroid':
         q = 6.7 
         sigma = 100
     elif dataset=='wine':
-        q = 1.6 
-        sigma = 100
-    elif dataset=='zoo':
-        q = 1 
-        sigma = 10
+        q = 10.0 
+        sigma = 1
+
     return k, t_max, Restarts, fuzzy_degree, q, sigma
