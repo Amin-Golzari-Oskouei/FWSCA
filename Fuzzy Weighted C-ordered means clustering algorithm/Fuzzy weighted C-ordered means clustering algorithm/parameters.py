@@ -7,51 +7,103 @@ def parameters(dataset, lable_true):
     fuzzy_degree = 2             # fuzzy membership degree
 
     # specific parameters
-    if dataset=='balance':
-        q = 3.9                     # the exponent value for the feature weight updates (β parameter in the original Paper).
-    elif dataset=='breast':
-        q = 9.5 
-    elif dataset=='bupa':
-        q = 1.3 
-    elif dataset=='cancer':
+    if dataset=='breast':
         q = 10
-    elif dataset=='Car_evaluation':
-        q = 1 
-    elif dataset=='dermatology':
-        q = 1 
+        pa = 0.9
+        pk = 0.9
+        pm = 0.9
+        alpha_type = 'SOWA'  # 'PLOWA' , 'SOWA'
+        loss_type = 'LOGarithmic'
+    elif dataset=='bupa':
+        q = 6
+        pa = 0.4
+        pk = 0.4
+        pm = 0.7
+        alpha_type = 'PLOWA'  # 'PLOWA' , 'SOWA'
+        loss_type = 'LOG-Linear'
+    elif dataset=='cancer':
+        q = 8
+        pa = 0.9
+        pk = 0.5
+        pm = 0.5
+        alpha_type = 'SOWA'  # 'PLOWA' , 'SOWA'
+        loss_type = 'Essential'
     elif dataset=='diabet':
-        q = 10 
+        q = 6
+        pa = 0.9
+        pk = 0.9
+        pm = 0.6
+        alpha_type = 'SOWA'  # 'PLOWA' , 'SOWA'
+        loss_type = 'SIGmoidal' 
     elif dataset=='ecoli':
-        q = 1 
+        q = 6
+        pa = 0.9
+        pk = 0.9
+        pm = 0.6
+        alpha_type = 'SOWA'  # 'PLOWA' , 'SOWA'
+        loss_type = 'SIGmoidal' 
     elif dataset=='glass':
-        q = 5.4 
-    elif dataset=='heart':
-        q = 9.7 
+        q = 6
+        pa = 0.9
+        pk = 0.9
+        pm = 0.9
+        alpha_type = 'PLOWA'  # 'PLOWA' , 'SOWA'
+        loss_type = 'Essential' 
     elif dataset=='heberman':
-        q = 9.6 
+        q = 10
+        pa = 0.9
+        pk = 0.3
+        pm = 0.3
+        alpha_type = 'PLOWA'  # 'PLOWA' , 'SOWA'
+        loss_type = 'LOG-Linear' 
     elif dataset=='ionosphere':
-        q = 1 
+        q = 1
+        pa = 0.9
+        pk = 0.9
+        pm = 0.6
+        alpha_type = 'SOWA'  # 'PLOWA' , 'SOWA'
+        loss_type = 'SIGmoidal'  
     elif dataset=='iris':
-        q = 2
-        pa = 1
-        pk = 1
-        pm = 1
-        alpha_type = 'SOWA'               # 'PLOWA' , 'SOWA'
-        loss_type = 'Essential'              #'Essential' , 'LOG-Linear', 'LOGarithmic', 'LINear', 'HUBer'
+        q = 8
+        pa = 0.9
+        pk = 0.9
+        pm = 0.9
+        alpha_type = 'PLOWA'# 'PLOWA' , 'SOWA'
+        loss_type = 'LOGarithmic' #'Essential' , 'LOG-Linear', 'LOGarithmic', 'LINear', 'HUBer'
     elif dataset=='letters':
-        q = 10 
+        q = 10
+        pa = 0.9
+        pk = 0.9
+        pm = 0.6
+        alpha_type = 'SOWA'  # 'PLOWA' , 'SOWA'
+        loss_type = 'SIGmoidal' 
     elif dataset=='seed':
-        q = 6.6 
-    elif dataset=='soybean':
-        q = 1 
-    elif dataset=='spectfheart':
-        q = 1.3 
+        q = 8
+        pa = 0.9
+        pk = 0.9
+        pm = 0.9
+        alpha_type = 'SOWA'  # 'PLOWA' , 'SOWA'
+        loss_type = 'LOGarithmic'
     elif dataset=='synthetic':
-        q = 8.7 
+        q = 8
+        pa = 0.9
+        pk = 0.9
+        pm = 0.9
+        alpha_type = 'SOWA'  # 'PLOWA' , 'SOWA'
+        loss_type = 'SIGmoidal' 
     elif dataset=='thyroid':
-        q = 8.6 
+        q = 10
+        pa = 0.9
+        pk = 0.9
+        pm = 0.9
+        alpha_type = 'SOWA'  # 'PLOWA' , 'SOWA'
+        loss_type = 'Essential' 
     elif dataset=='wine':
-        q = 9.7 
-    elif dataset=='zoo':
-        q = 1 
+        q = 8
+        pa = 0.9
+        pk = 0.9
+        pm = 0.9
+        alpha_type = 'PLOWA'  # 'PLOWA' , 'SOWA'
+        loss_type = 'LOG-Linear'  
+
     return k, t_max, Restarts, fuzzy_degree, q, pa, pk , pm, alpha_type, loss_type
