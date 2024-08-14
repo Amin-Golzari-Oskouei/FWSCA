@@ -4,7 +4,7 @@ def parameters(dataset, lable_true):
     k = len(set(lable_true))     # number of clusters.
     t_max = 100                  # maximum number of iterations.
     Restarts = 10                # number of FCM restarts.
-    fuzzy_degree = 1.1             # fuzzy membership degree
+    fuzzy_degree = 2             # fuzzy membership degree
 
     # specific parameters
     if dataset=='iris':
