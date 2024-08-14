@@ -6,12 +6,6 @@ def parameters(dataset, lable_true):
     Restarts = 10                # number of FCM restarts.
     fuzzy_degree = 2             # fuzzy membership degree
 
-
-    # ====alpha=PLOWA====//loss=Essential====//pa=0.9====//pk=0.5====//pm=0.9==== breast_tissue
-    # ====alpha=PLOWA====//loss=Essential====//pa=0.9====//pk=0.5====//pm=0.9==== cmc
-    # ====alpha=PLOWA====//loss=SIGmoidal====//pa=0.9====//pk=0.9====//pm=0.9==== synthetic_global
-    # ====alpha=SOWA====//loss=SIGmoidal====//pa=0.9====//pk=0.3====//pm=0.9==== vowel
-    # ====alpha=SOWA====//loss=LOG-Linear====//pa=0.9====//pk=0.3====//pm=0.3==== waveform
     # specific parameters
     if dataset=='breast_tissue':
         q = 6
