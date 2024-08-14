@@ -6,30 +6,23 @@ def parameters(dataset, lable_true):
     Restarts = 10                # number of FCM restarts.
     fuzzy_degree = 2             # fuzzy membership degree
 
-    # 'cmc', 'breast_tissue', 'synthetic_global', 'waveform', 'vowel'
     # specific parameters
     if dataset=='cmc':
-                beta = 1.8
-                q = 1.1
-                sigma = 0.000001
+        beta = 1.8
+        q = 1.1
+        sigma = 0.000001
     elif dataset == 'breast_tissue':
-        # beta = 0.4
-        # q = 1.1
-        # sigma = 0.000001
         beta = 1.4
         q = 6
         sigma = 0.0001
-
     elif dataset == 'synthetic_global':
         beta = 1.6
         q = 4.1
         sigma = 0.1
     elif dataset == 'waveform':
-
         beta = 0.3
         q = 5.6
         sigma = 1
-
     elif dataset == 'vowel':
         beta = 0.7
         q = 4.1
