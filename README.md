@@ -145,16 +145,3 @@ A. G. Oskouei, N. Samadi, A. Bouyer, and B. Arasteh,
 "FWSCA: An Open-Source Python Package for Feature-Weighted Soft Clustering Algorithms",
 2025.
 
-yaml
-Copy code
-
----
-
-Would you like me to include **example figures/screenshots** (e.g., directory structure or sample output visualization) in the README for better clarity? I can add them using Markdown image tags.
-
-
-
-
-
-
-
