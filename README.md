@@ -1,3 +1,4 @@
+````markdown
 # FWSCA: Feature-Weighted Soft Clustering Algorithms
 
 **Authors:**  
@@ -16,37 +17,35 @@ Amin Golzari Oskouei¹˒⁴*, Negin Samadi², Asgarali Bouyer³˒⁴, and Bahman
 
 ## 🧠 Overview
 
-**FWSCA** (Feature-Weighted Soft Clustering Algorithms) is an open-source Python package that implements **26 feature-weighted fuzzy clustering algorithms**.  
-It aims to bridge the gap between theoretical development and practical implementation of **feature-weighted soft clustering** methods.
+**FWSCA (Feature-Weighted Soft Clustering Algorithms)** is an open-source Python package that implements **26 feature-weighted fuzzy clustering algorithms**.  
+It bridges the gap between theoretical development and practical application of **feature-weighted soft clustering** techniques.
 
-This package is particularly valuable for **machine learning**, **data mining**, and **pattern recognition** researchers and practitioners.  
-It supports various datasets, provides extensive **evaluation metrics**, and allows users to **modify or extend algorithms easily** through its modular structure.
+The package is highly useful for **machine learning**, **data mining**, and **pattern recognition** researchers and practitioners.  
+It supports multiple datasets, provides extensive evaluation metrics, and allows users to easily extend or modify the algorithms.
 
 ---
 
 ## 🚀 Features
 
-- Implementation of **26 feature-weighted fuzzy clustering algorithms**  
-- Modular architecture with transparent and extensible code structure  
-- Support for both **internal** and **external** evaluation metrics:
-  - Accuracy, NMI, Precision, Recall, F1, Silhouette, and Davies–Bouldin  
-- Includes **sample dataset** (e.g., Iris) and **demo scripts** for quick testing  
-- Fully **reproducible** with fixed random seeds and logging
+- Implementation of **26 feature-weighted fuzzy clustering algorithms**
+- Modular and transparent code structure
+- Internal and external evaluation metrics:
+  - Accuracy, NMI, Precision, Recall, F1, Silhouette, Davies–Bouldin
+- Sample dataset included (e.g., *Iris*)
+- Reproducible experiments with fixed random seeds
 
 ---
 
 ## 🧩 Software Architecture
 
-The package follows a **modular and reusable design**:
-
 | Module | Description |
 |--------|--------------|
-| `main.py` | Core implementation of the clustering algorithm, including optimization and convergence steps |
-| `object_fun.py` | Defines the mathematical objective function of the algorithm |
-| `parameters.py` | Contains configuration parameters (e.g., number of clusters, fuzzifier, iteration limits) |
-| `calculateMetrics.py` | Provides performance metrics (Accuracy, NMI, F1, etc.) |
-| `demo.py` | Demonstration script that loads datasets, runs algorithms, and displays results |
-| `iris.mat` | Example dataset for testing |
+| `main.py` | Core algorithm implementation: optimization, membership updates, convergence checks |
+| `object_fun.py` | Mathematical objective function of the clustering algorithm |
+| `parameters.py` | Default configuration parameters (clusters, fuzzifier, iterations, thresholds) |
+| `calculateMetrics.py` | Performance evaluation module with internal/external metrics |
+| `demo.py` | Demonstration script: runs the algorithm, loads data, prints results |
+| `iris.mat` | Sample dataset for initial testing |
 
 ---
 
@@ -54,49 +53,58 @@ The package follows a **modular and reusable design**:
 
 ### Requirements
 - Python ≥ 3.10  
-- Dependencies:  
+- Dependencies:
   ```bash
   pip install numpy scipy
-Clone the Repository
-bash
-Copy code
+````
+
+### Clone the Repository
+
+```bash
 git clone https://github.com/Amin-Golzari-Oskouei/FWSCA.git
 cd FWSCA
-▶️ Usage
-You can quickly run any algorithm by executing the demo script:
+```
 
-bash
-Copy code
+---
+
+## ▶️ Usage
+
+To quickly test the package, simply run the demo script:
+
+```bash
 python demo.py
+```
+
 This will:
 
-Load the sample dataset (iris.mat)
+1. Load the sample dataset (`iris.mat`)
+2. Initialize and run the selected algorithm
+3. Display evaluation metrics in the console
 
-Initialize the selected algorithm
+### Example: Running a Specific Algorithm
 
-Run the clustering process
+You can change the parameters in `parameters.py`:
 
-Print and save evaluation metrics
-
-Example: Running a Specific Algorithm
-You can modify the algorithm selection or parameters in parameters.py:
-
-python
-Copy code
+```python
 num_clusters = 3
 fuzzifier = 2
 max_iter = 100
 epsilon = 1e-5
-Then run:
+```
 
-bash
-Copy code
+Then execute:
+
+```bash
 python main.py
-Results will be displayed in the console and optionally saved to output files.
+```
 
-💡 Example Output
-makefile
-Copy code
+Results will appear in the terminal and can be saved automatically.
+
+---
+
+## 💡 Example Output
+
+```
 Algorithm: FWCW-FCM
 Dataset: Iris
 Clusters: 3
@@ -104,44 +112,57 @@ Accuracy: 0.923
 NMI: 0.841
 Silhouette: 0.712
 Davies–Bouldin: 0.428
-📚 Contribution Guidelines
-We welcome contributions from the research and developer community!
+```
 
-To contribute:
-Fork the repository
+---
 
-Create a new branch:
+## 📚 Contribution Guidelines
 
-bash
-Copy code
-git checkout -b feature-name
-Follow consistent coding standards:
+We welcome contributions from the community!
 
-Use clear variable names
+### To contribute:
 
-Comment complex logic
+1. Fork the repository
+2. Create a new branch:
 
-Use modular design similar to existing algorithms
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Follow these rules:
 
-Submit a Pull Request (PR) with a detailed description of changes
+   * Use clear variable names
+   * Add comments for complex code
+   * Keep the modular design structure
+4. Submit a Pull Request (PR) with a detailed description of your updates.
 
-Please ensure your contribution passes basic tests and follows the existing directory structure.
+---
 
-📜 License
-This project is licensed under the MIT License — see the LICENSE file for details.
-You are free to use, modify, and distribute the code with attribution.
+## 📜 License
 
-🧑‍💻 Contact & Support
-For questions, issues, or feedback, please contact:
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+You are free to use, modify, and distribute this software with proper attribution.
 
-📧 Amin Golzari Oskouei
+---
+
+## 🧑‍💻 Contact & Support
+
+For questions, issues, or collaboration requests, please contact:
+
+📧 **Amin Golzari Oskouei**
 Faculty of IT and Computer Engineering, Urmia University of Technology
-Email: a.golzari@uut.ac.ir
+Email: [a.golzari@uut.ac.ir](mailto:a.golzari@uut.ac.ir)
 
-📈 Citation
+---
+
+## 📈 Citation
+
 If you use this package in your research, please cite:
 
-A. G. Oskouei, N. Samadi, A. Bouyer, and B. Arasteh,
-"FWSCA: An Open-Source Python Package for Feature-Weighted Soft Clustering Algorithms",
-2025.
+> A. G. Oskouei, N. Samadi, A. Bouyer, and B. Arasteh,
+> **"FWSCA: An Open-Source Python Package for Feature-Weighted Soft Clustering Algorithms"**,
+> 2025.
+
+---
+
+```
 
