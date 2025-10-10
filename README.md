@@ -161,8 +161,3 @@ If you use this package in your research, please cite:
 > A. G. Oskouei, N. Samadi, A. Bouyer, and B. Arasteh,
 > **"FWSCA: An Open-Source Python Package for Feature-Weighted Soft Clustering Algorithms"**,
 > 2025.
-
----
-
-```
-
