@@ -1,4 +1,4 @@
-````markdown
+
 # FWSCA: Feature-Weighted Soft Clustering Algorithms
 
 **Authors:**  
@@ -56,7 +56,7 @@ It supports multiple datasets, provides extensive evaluation metrics, and allows
 - Dependencies:
   ```bash
   pip install numpy scipy
-````
+
 
 ### Clone the Repository
 
